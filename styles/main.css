@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* This is a comment 
+ * that spans multiple lines.
+   It's pretty cool*/
+
+body {
+    background-color: #ececec;
+}
+
+#btn {
+    display: none;
+}
+
+form {
+    width: 350px;
+    margin: 200px auto 0;
+    padding: 15px;
+}
+
+form legend {
+    font-weight: bold;
+    font-style: italic;
+    color: #700;
+}
+
+fieldset {
+    border-radius: 15px 40px / 15px 40px;
+}
+
+.formField {
+    padding: 10px;
+}
+
+.formField label {
+    display: inline-block;
+    min-width: 90px;
+}
+
+.formField input[type='text'],
+.formField input[type='password']{
+    border-radius: 15px;
+    height: 25px;
+}
+
+input[type='submit'] {
+    margin-top: 9px;
+    padding: 5px;
+    background-color: #99e;
+    color: black;
+    font-family: consolas;
+    font-size: 14pt;
+}
