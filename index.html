@@ -1,25 +1,63 @@
+<!-- This is a comment, it is ignored by the browser -->
+<!-- HTML files describe the structure of a document -->
 <html>
+    <!-- The head section is ont displayed by browsers, but contain metadata about the document -->
     <head>
-        <script src="lib/require.js" data-main="script/app"></script>
+        <!-- A link element can be used to include other documents in this one.
+        The rel attribute describes what kind of document we want to include
+        A stylesheet describes how the elements in this document should be displayed by a browser
+        The href attribute points the broswer to the document we want to include
+        -->
         <link rel="stylesheet" href="styles/main.css" />
     </head>
+    <!-- The body section contains what will be displayed by the browser -->
     <body>
-        <div id="container"></div>
-        <button id="btn">takki</button>
-        <!-- This is a comment -->
+        <!-- A div is a container which spans the breadth of the page
+            The id attribute is used by javascript to uniquely identify an element.
+            Each id should only appear once in a HTML document
+        -->
+        <div id="container">
+            <!-- An img tag tells the browser to display an image
+            The src attribute tells the browser where the picture is located
+            -->
+            <img src="static/images/babe.jpg"/>
+            <!-- This element displays a button -->
+            <button id="btn">close</button>
+        </div>
+        <!-- A form is a collection of inputs we want from a user
+        The name attributes is useful for the server which receives the form
+        The action attribute tells the browser where to send the form data once the user submits it
+        -->
         <form name="importantForm" action="#">
+            <!-- A fieldset is a collection of form fields -->
             <fieldset>
+                <!-- A legend tag is used to label a parent fieldset -->
                 <legend>Login</legend>
+                <!-- The class attribute is used by CSS to target multiple 'kinds' of elements -->
                 <div class="formField">
+                    <!-- Labels are used to explain what fields represent
+                    The for attribute connects the label to a field with the same name attribute
+                    -->
                     <label for="username">Username</label>
+                    <!-- Inputs are used to allow users to input data
+                    text inputs are for single line text
+                    -->
                     <input id="username" name="username" type="text" />
                 </div>
                 <div class="formField">
                     <label for="password">Password</label>
+                    <!-- Password fields are like text fields except they hide the letters you type -->
                     <input id="password" name="password" type="password" />
                 </div>
             </fieldset>
+            <!-- Submit inputs are buttons with a default action of submitting the form which contain them
+            As you can see - Icelandic characters can be problematic.
+            HTML should contain english letters and some special characters. If you need more,
+            you can use &{HTML entity code}; to display them
+            -->
             <input id="submit" name="submitBtn" type="submit" value="H&aelig;, &yacute;ttu &aacute; mig!!">
         </form>
+        <!-- Scripts tell the browser to fetch and run given javascript files -->
+        <script src="lib/require.js" data-main="script/app"></script>
     </body>
 </html>

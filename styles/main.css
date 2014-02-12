@@ -1,11 +1,12 @@
+/*
+ * CSS files contain rules which the browser should follow to display elements in a HTML document
+ * A CSS rule starts with a selector which targets one or many elements
+ * Then we define the values for properties we care about on the targeted elements
+ */
 * {
     padding: 0px;
     margin: 0px;
 }
-
-/* This is a comment 
- * that spans multiple lines.
-   It's pretty cool*/
 
 body {
     background-color: #ececec;
