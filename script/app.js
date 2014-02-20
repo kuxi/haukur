@@ -5,6 +5,7 @@ require([], function() {
     var password_field = document.getElementById('password');
     var container = document.getElementById('container');
     var goodbyelove = document.getElementById("closeButton");
+    var hellolove = document.getElementsByClassName("smallBabe");
 
     // Create a list of user objects
     // Each user contains a username and password length
@@ -51,6 +52,19 @@ require([], function() {
     };
     goodbyelove.onclick = function(event) {
         container["style"]["display"] = "";
+    }
+
+    for (var i = 0; i < hellolove.length; i++) {
+        var love = hellolove[i];
+        love.onclick = function(event){
+            console.log("tokst");
+            if (event["target"]["className"] === "") {
+                event["target"]["className"] = "smallBabe";
+            } else {
+                event["target"]["className"] = "";
+            }
+
+        }
     }
 });
 

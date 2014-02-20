@@ -13,10 +13,15 @@ body {
 }
 
 #container {
-    display: none;
+
     margin: 0px auto 0px;
     width: 724px;
     border: 5px black solid;
+}
+
+.smallBabe {
+    width: 400px;
+    height: 400px;
 }
 
 form {
