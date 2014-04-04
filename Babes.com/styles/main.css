@@ -1,4 +1,4 @@
-/*
+﻿/*
  * CSS files contain rules which the browser should follow to display elements in a HTML document
  * A CSS rule starts with a selector which targets one or many elements
  * Then we define the values for properties we care about on the targeted elements
@@ -13,7 +13,7 @@ body {
 }
 
 #container {
-
+	display: none;
     margin: 0px auto 0px;
     width: 724px;
     border: 5px black solid;
